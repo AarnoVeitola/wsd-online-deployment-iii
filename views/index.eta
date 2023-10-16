@@ -1,0 +1,13 @@
+<h1>Chat title</h1>
+<form method="POST">
+    <input type="text" name="sender" />
+    <input type="text" name="message" />
+    <input type="sumbit" value="Send message" />
+</form>
+<ul>
+<% it.messages.forEach((entry) => { %>
+    <li>
+    <%= entry.sender %>: <%= entry.message %>
+    </li>
+<% }); %>
+</ul>
